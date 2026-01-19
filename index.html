@@ -154,7 +154,7 @@ canvas {
     
 </div>
 
-<div class="music-btn" onclick="toggleMusic()">🎵 Music</div>
+<div class="music-btn" onclick="toggleMusic()">🎵 Play Music</div>
 
 <audio id="bgMusic" loop>
     <source src="audio/happy-birthday-1.mp3" type="audio/mpeg">
@@ -231,9 +231,7 @@ fetch("./clients.json")
 
 
 /* ▶️ Auto-play after first click */
-document.addEventListener("click", () => {
-    if (music.paused) music.play();
-}, { once: true });
+
 </script>
 
 </body>
