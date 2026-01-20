@@ -136,6 +136,19 @@ canvas {
     z-index: 3;
     font-size: 0.95rem;
 }
+    /* Footer */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #2f3a6f;
+    z-index: 3;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
 </style>
 </head>
 
@@ -157,7 +170,7 @@ canvas {
 <div class="music-btn" onclick="toggleMusic()">🎵 Play Music</div>
 
 <audio id="bgMusic" loop>
-    <source src="audio/happy-birthday-1.mp3" type="audio/mpeg">
+    <source src="audio/happy-birthday.mp3" type="audio/mpeg">
 </audio>
 
 <script>
@@ -233,6 +246,10 @@ fetch("./clients.json")
 /* ▶️ Auto-play after first click */
 
 </script>
+
+    <div class="footer">
+    © Swathi 2026. All rights reserved.
+</div>
 
 </body>
 </html>
